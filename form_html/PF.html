@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="/js/pf.js"></script>
+	<script src="/js/fp.js"></script>
+</head>
+<body>
+	<h1>一次性收付计算器</h1>
+<form>
+pv:</br>
+<input type="text" name="pv" id="pv"></br>
+fv:</br>
+<input type="text" name="fv" id="fv"></br>
+rate:</br>
+<input type="text" name="rate" id="rate"></br>
+nper:</br>
+<input type="text" name="nper" id="nper"></br>
+</form>
+	<button onclick="pf()">终值：</button>
+	<button onclick="fp()">现值：</button>
+
+	<p id="pf"></p>
+	<p id="fp"></p>
+
+</body>
+</html>

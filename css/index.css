@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    background-color: whitesmoke;
+    
+}
+.headerbox{
+    flex: 40%;
+}
+.navbar  header{
+    
+    text-align: left;
+    color: black;
+}
+.abox{
+    flex: 60%;
+    flex-direction: row-reverse;
+    display: flex;
+}
+
+.abox a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.side{
+    flex: 30%;
+    background-color: wheat;
+    padding: 20px;
+    
+}
+
+.right{
+    flex: 70%;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+.box1{
+    border-style: solid;
+    border-radius: 7px;
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.apply{
+    border-style: solid;
+    border-radius: 5px;
+    padding:10px;
+    margin: 20px;
+}
+
+.box2{
+    border-style: solid;
+    border-radius: 7px;
+    background-color: white;
+    padding: 5 px;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.game{
+    border-style: solid;
+    border-radius: 5px;
+    padding:10px;
+    margin: 10px;
+}
+
+.a{
+  
+        text-decoration: none;
+        color: black;
+}

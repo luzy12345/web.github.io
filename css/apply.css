@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    background-color: whitesmoke;
+    
+}
+.headerbox{
+    flex: 40%;
+}
+.navbar  header{
+    text-align: left;
+    color: black;
+}
+
+.abox{
+    flex: 60%;
+    flex-direction: row-reverse;
+    display: flex;
+}
+
+.abox a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.row{
+    width: 100%;
+    height: auto;
+    border-style: solid;
+    border-radius: 5px;
+    padding:10px;
+    background-color: wheat;
+}
+
+.box3{
+    border-style: solid;
+    border-radius: 7px;
+    background-color: white;
+    padding: 5 px;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.ul a{
+    flex-direction: column;
+    list-style-type: square;
+}
