@@ -18,10 +18,11 @@
 .abox{
     flex: 60%;
     flex-direction: row-reverse;
-    display: flex;
+    
 }
 
 .abox a{
+    float: right;
     text-decoration: none;
     color: black;
     padding: 10px 20px;
@@ -30,7 +31,13 @@
     border-radius: 5px;
     text-align: center;
 }
-
+.abox a:hover:not(.active) {
+    background-color: #ddd;
+    color: black;
+  }
+.active{
+    background-color: rgb(8, 5, 5);
+}
 .row{
     width: 100%;
     height: auto;
