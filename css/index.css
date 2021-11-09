@@ -28,6 +28,7 @@
 li {
     float: right;
     list-style-type:none;
+    display: flex;
   }
   
 li a{
