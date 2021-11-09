@@ -25,8 +25,12 @@
     flex-direction: row-reverse;
     /*display: flex;*/
 }
-
-.abox a{
+li {
+    float: right;
+    list-style-type:none;
+  }
+  
+li a{
     float: right;
     text-decoration: none;
     color: black;
@@ -36,7 +40,7 @@
     border-radius: 5px;
     text-align: center;
 }
-.abox a:hover:not(.active){
+li a:hover:not(.active){
     background-color: #ddd;
     color: black;
   }
@@ -44,6 +48,19 @@
 .active{
     background-color: rgb(141, 137, 137);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .row{
     display: flex;

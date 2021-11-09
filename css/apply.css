@@ -20,8 +20,14 @@
     flex-direction: row-reverse;
     
 }
+.abox li{
+    float: right;
+    text-decoration: none;
+    display: flex;
+}
 
-.abox a{
+
+.abox li a{
     float: right;
     text-decoration: none;
     color: black;
@@ -31,13 +37,18 @@
     border-radius: 5px;
     text-align: center;
 }
-.abox a:hover:not(.active) {
+
+.abox li a:hover:not(.active) {
     background-color: #ddd;
     color: black;
   }
-.active{
-    background-color: rgb(8, 5, 5);
+
+.abox .active{
+    background-color: rgb(141, 137, 137);
 }
+
+
+
 .row{
     width: 100%;
     height: auto;
@@ -56,9 +67,12 @@
     width: 80%;
     flex-direction: column;
     margin: 20px;
+    display: flex;
 }
 
-.ul a{
-    flex-direction: column;
+
+ul.a{
     list-style-type: square;
+     flex-direction: column;
+    
 }
