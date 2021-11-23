@@ -33,19 +33,60 @@
                 <li>已知现值求终值</li>
                 <li>已知终值求现值</li>
             </ol>
+            <a href="../form_html/PF.html">点击使用计算器</a>
         </div>
         <div class="side">
             <h2>一次性支付终值计算(复利终值计算)</h2>
             <p>复利终值是指本金在约定的期限内获得利息后，将利息加入本金再计利息，逐期滚算到约定期末的本金之和。</p>
             <div class="box2">
-                <h3>公式</h3>
-                <p></p>
+                <h3 >公式</h3>
+                <img src="../image/calculator1.1_gongshi.png" style="width: 80%;">
             </div>
             <div class="box2">
-                <h3>输入参数</h3>
+                <h3 >输入参数</h3>
+                <table id="calculator">
+                    <tr>
+                        <th>参数中文名</th>
+                        <th>参数英文名</th>
+                        <th>数据类型</th>
+                        <th>取值约束</th>
+                    </tr>
+                    <tr>
+                        <td>利率</td>
+                        <td>rate</td>
+                        <td>double</td>
+                        <td>0~double最大取值</td>
+                    </tr>
+                    <tr>
+                        <td>计息期数</td>
+                        <td>n</td>
+                        <td>double</td>
+                        <td>0~double最大取值</td>
+                    </tr>
+                    <tr>
+                        <td>现值</td>
+                        <td>previous value</td>
+                        <td>double</td>
+                        <td>0~double最大取值</td>
+                    </tr>
+                </table>
             </div>
             <div class="box2">
                 <h3>输出参数</h3>
+                <table id="calculator">
+                    <tr>
+                        <th>参数中文名</th>
+                        <th>参数英文名</th>
+                        <th>数据类型</th>
+                        <th>取值约束</th>
+                    </tr>
+                    <tr>
+                        <td>终值</td>
+                        <td>future value</td>
+                        <td>double</td>
+                        <td>0~double最大取值</td>
+                    </tr>
+                </table>
             </div>
         </div>
         <div class="right" style="background-color: wheat;">
@@ -55,19 +96,59 @@
             </p>
             <div class="box2">
                 <h3>公式</h3>
-                <p></p>
+                <img src="../image/calculator1.2_gongshi.png" style="width: 80%;">
             </div>
             <div class="box2">
                 <h3>输入参数</h3>
+                <table id="calculator">
+                    <tr>
+                        <th>参数中文名</th>
+                        <th>参数英文名</th>
+                        <th>数据类型</th>
+                        <th>取值约束</th>
+                    </tr>
+                    <tr>
+                        <td>利率</td>
+                        <td>rate</td>
+                        <td>double</td>
+                        <td>0~double最大取值</td>
+                    </tr>
+                    <tr>
+                        <td>计息期数</td>
+                        <td>n</td>
+                        <td>double</td>
+                        <td>0~double最大取值</td>
+                    </tr>
+                    <tr>
+                        <td>终值</td>
+                        <td>future value</td>
+                        <td>double</td>
+                        <td>0~double最大取值</td>
+                    </tr>
+                </table>
             </div>
             <div class="box2">
                 <h3>输出参数</h3>
+                <table id="calculator">
+                    <tr>
+                        <th>参数中文名</th>
+                        <th>参数英文名</th>
+                        <th>数据类型</th>
+                        <th>取值约束</th>
+                    </tr>
+                    <tr>
+                        <td>现值</td>
+                        <td>previous value</td>
+                        <td>double</td>
+                        <td>0~double最大取值</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
 
 
 
-    <a href="../form_html/PF.html">点击使用计算器</a>
+    
 </body>
 </html>
