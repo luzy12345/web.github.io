@@ -80,6 +80,8 @@ li a:hover:not(.active){
     flex: 70%;
     background-color: antiquewhite;
     padding: 20px;
+    
+    
 }
 
 .box1{
@@ -108,10 +110,19 @@ li a:hover:not(.active){
     padding: 5 px;
     display: flex;
     width: 80%;
+    
     flex-direction: column;
     margin: 20px;
+    float: left;
 }
-
+.aboutme{
+    float: right;
+    border-style: solid;
+    background-color: white;
+    
+    margin: 20px;
+    width: 30%;
+}
 .game{
     border-style: solid;
     border-radius: 5px;
@@ -123,4 +134,23 @@ li a:hover:not(.active){
   
         text-decoration: none;
         color: black;
+}
+
+.introduce{
+    color: #000;
+    font-size: 80%;
+    text-indent: 5%;
+}
+
+
+
+img{
+    width: 100px;
+    height:100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 50%;
+    overflow: hidden;
 }
