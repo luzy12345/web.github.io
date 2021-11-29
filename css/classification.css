@@ -50,15 +50,27 @@ li a:hover:not(.active){
     background-color: rgb(141, 137, 137);
 }
 
-
 .row{
-    width: 100%;
-    height: auto;
-    border-style: solid;
-    border-radius: 5px;
-    padding:10px;
-    background-color: wheat;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
+
+.side{
+    flex: 70%;
+    background-color: wheat;
+    padding: 20px;
+    
+}
+
+.right{
+    flex: 30%;
+    background-color: antiquewhite;
+    padding: 20px;
+    
+    
+}
+
 
 .box{
     border-style: solid;
@@ -71,9 +83,61 @@ li a:hover:not(.active){
     margin: 20px;
 }
 
+.aboutme{
+    float: right;
+    border-style: solid;
+    background-color: white;
+    
+    margin: 20px;
+    width: 90%;
+}
+.introduce{
+    color: #000;
+    font-size: 80%;
+    text-indent: 5%;
+}
+
+img{
+    width: 100px;
+    height:100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 
 ul.a{
     list-style-type: square;
      flex-direction: column;
     
 }
+
+
+#table {
+    
+    
+    border-collapse: collapse;
+    width: 80%;
+    
+    margin: 20px;
+  }
+  
+  #table td, #table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    background-color: white;
+  }
+  
+  #table tr:hover {background-color: #f5f5f5;}
+  
+  #table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: white;
+    color: black;
+    width: 25%;
+  }

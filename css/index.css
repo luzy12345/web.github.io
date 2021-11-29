@@ -115,6 +115,14 @@ li a:hover:not(.active){
     margin: 20px;
     float: left;
 }
+.box3{
+    float: left;
+    border-style: solid;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    width: 90%;
+}
 .aboutme{
     float: right;
     border-style: solid;
