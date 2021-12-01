@@ -7,8 +7,17 @@
     <link  rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
     <script type="text/javascript" src="site.json"></script>
+    <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $("button").click(function(){
+    $("p").hide();
+    });
+    });
+    </script>
 </head>
 <body>
+    
     <div class="navbar">
         <div class="headerbox">
             <h1 class="header">复利计算器</h1>
@@ -20,7 +29,33 @@
             <li><a href="details_html/calculator_details.html">计算器</a></li>
             <li><a class="active" href="index.html">首页</a></li>
         </div>
+        
+        
+        
     </div>
+    <div class="cover">
+            <div class="pic">
+            </div>
+            <div class="intro">
+                <h3 style="text-align: center;">一个在线计算复利的网站</h3>
+                <p style="text-indent: 2em;">生活中的各种场景下我们都会用到复利计算，那么复利究竟是什么呢？又该如何计算？在什么场景下使用呢？</p>
+                <p style="text-indent: 2em;">在本站中您能一一得到解答</p>
+            </div>
+    </div>
+    <div class="but">
+        <div id="down">
+            <i class="fa fa-angle-double-down" style="text-align: center;font-size: 25px;"></i>
+        </div>
+        
+    </div>
+    <script>     
+        $('#down').click(function () {
+            $('html,body').animate({
+                scrollTop: '700px' }, 2000
+                );
+            return false; }
+        );
+    </script>
     <div class="row">
         <div class="side">
             <h2 style="width: 100%;">项目</h2>
@@ -66,7 +101,7 @@
                 <div class="game">
                     <a href="blog/readme.html" style="text-decoration: none;color: #000;width: 100%;">README</a>
                     <p class="introduce">本网站主要用于实现复利计算的功能，并且在制作计算器的基础上，将复利计算应用在多个场景中。在日益完善本网站的过程中，作者将实时发表关于实现网站功能以及维护的博客...</p>
-                    <hr width="550px">
+                    <hr width="500px">
 
                     <i class="fa fa-folder-open"></i>
                     <a href="classification/classification_introduce.html" style="text-decoration: none;color: rgb(253, 166, 4);font-size: 90%;">介绍区</a>
