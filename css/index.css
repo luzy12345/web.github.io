@@ -7,7 +7,6 @@
     }
 }
 .but{
-    
     background-color: whitesmoke;
     height: 20px;
     text-align: center;
@@ -30,7 +29,8 @@
 .intro{
     flex: 50%;
     border: solid;
-    
+    border-color: #ddd;
+    padding: 10px;
 }
 .navbar{
     display: flex;
