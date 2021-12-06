@@ -8,16 +8,10 @@
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
     <script type="text/javascript" src="site.json"></script>
     <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function(){
-    $("button").click(function(){
-    $("p").hide();
-    });
-    });
-    </script>
+    <script type="text/javascript" src='js/cookie.js'></script>
 </head>
-<body>
-    
+<body onload="checkCookie()">
+
     <div class="navbar">
         <div class="headerbox">
             <h1 class="header">复利计算器</h1>
@@ -29,8 +23,6 @@
             <li><a href="details_html/calculator_details.html">计算器</a></li>
             <li><a class="active" href="index.html">首页</a></li>
         </div>
-        
-        
         
     </div>
     <div class="cover">
