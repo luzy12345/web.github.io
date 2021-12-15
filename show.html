@@ -1,18 +1,29 @@
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script type="text.javascript" src="js/ejs.js"></script>
+    <script src="js/ejs.js"></script>
     <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+    <script id="blog" type="text/template">
+      <h1> <%= title %> </h1>
+      <p> <%= content %> </p>
+      <ul>
+      <% links.forEach(function(link){ %>
+        <li><%= link %></li>
+      <% }) %>
+      </ul>
+    </script>
+    <script>
+      onload = function(){
+        var blog = document.getElementById('blog').innerHTML;
+        $.get("test.json",function(data,status){
+           
+          var html = ejs.render(blog,data); 
+        });
+          document.body.innerHTML = html;
+      }
+        
+      
+    </script>
   </head>
-<body>
-  <div id="main">  </div>
-  <script>
-    var post = {title:'我的博文',content:'博文内容', 
-      links:['<a href="./posts/32"> 相关文章一<a>','...']};
-      $.get("blog.tpl", function(result){
-        var html = ejs.compile(result)(post);
-        $("#main").html(html);
-    });
-  </script>
-</body>
-  </html>
+  <body>
+  </body>
+</html>
