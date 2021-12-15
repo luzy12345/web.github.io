@@ -29,8 +29,8 @@
           }
           $("#submit").click(function () {
               var name = $("#txtName").val();
-          var pwd = $("#txtPwd").val();
-          var checked = $("#remember").attr("checked");
+            var pwd = $("#txtPwd").val();
+            var checked = $("#remember").attr("checked");
               if (checked == "checked") {
                   $.cookie("name", name, {expires:2});
                   $.cookie("pwd", pwd, {expires:2});

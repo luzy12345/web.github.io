@@ -1,17 +1,18 @@
 <html>
   <head>
-    <script src="js/ejs.js"></script>
-    <script src="blog.ejs"></script>
-    <script>
-      onload = function(){
-        var users = document.getElementById('users').innerHTML;
-        var names = ['loki', 'tobi', 'jane'];
-        var html = ejs.render(users, { names: names });
-        document.body.innerHTML = html;
-      }
-    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text.javascript" src="js/ejs.js"></script>
+    <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
   </head>
-  <body >
-
-  </body>
-</html>
+<body>
+  <div id="main">  </div>
+  <script>
+    var post = {title:'我的博文',content:'博文内容', 
+      links:['<a href="./posts/32"> 相关文章一<a>','...']};
+      $.get("blog.tpl", function(result){
+        var html = ejs.compile(result)(post);
+        $("#main").html(html);
+    });
+  </script>
+</body>
+  </html>
