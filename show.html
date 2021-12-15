@@ -14,10 +14,15 @@
     <script>
       onload = function(){
         var blog = document.getElementById('blog').innerHTML;
-        $.get("test.json",function(data,status){
-          let post=JSON.parse(data);
-          var html = ejs.render(blog,post); 
-        });
+        $.ajax({
+                type: "get",//请求类型
+                datatype: "json",//数据类型
+                url: "test.json",//向哪里请求
+                success: function(data){//请求成功后执行该函数
+                  var html = ejs.render(blog,data); 
+                }
+            })
+        
           document.body.innerHTML = html;
       }
         
