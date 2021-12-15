@@ -15,8 +15,8 @@
       onload = function(){
         var blog = document.getElementById('blog').innerHTML;
         $.get("test.json",function(data,status){
-           
-          var html = ejs.render(blog,data); 
+          let post=JSON.parse(data);
+          var html = ejs.render(blog,post); 
         });
           document.body.innerHTML = html;
       }
