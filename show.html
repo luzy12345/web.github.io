@@ -1,32 +1,22 @@
 <html>
   <head>
     <script src="js/ejs.js"></script>
-    <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
-    <script id="blog" type="text/template">
-      <h1> <%= title %> </h1>
-      <p> <%= content %> </p>
-      <ul>
-      <% links.forEach(function(link){ %>
-        <li><%= link %></li>
-      <% }) %>
-      </ul>
+    <script id="users" type="text/template">
+      <% if (names.length) { %>
+        <ul>
+          <% names.forEach(function(name){ %>
+            <li><%= name %></li>
+          <% }) %>
+        </ul>
+      <% } %>
     </script>
     <script>
       onload = function(){
-        var blog = document.getElementById('blog').innerHTML;
-        $.ajax({
-                type: "get",//请求类型
-                datatype: "json",//数据类型
-                url: "test.json",//向哪里请求
-                success: function(data){//请求成功后执行该函数
-                  var html = ejs.render(blog,data); 
-                }
-            })
-        
-          document.body.innerHTML = html;
+        var users = document.getElementById('users').innerHTML;
+        var names = ['loki', 'tobi', 'jane'];
+        var html = ejs.render(users, { names: names });
+        document.body.innerHTML = html;
       }
-        
-      
     </script>
   </head>
   <body>
