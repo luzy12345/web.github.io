@@ -69,7 +69,10 @@
                     <i class="fa fa-folder-open"></i>
                     <a href=<%= passage.classification_html %> style="text-decoration: none;color: rgb(253, 166, 4);"><%= passage.classification %></a>
                     <i class="fa fa-tags"></i>
-                    <% for(let t in passage.tags){ %>
+                    
+                       
+                    
+                    <% for(let t of passage.tags){ %>
                         <a href=""><%= t %></a>
                     <% } %>
                 </div>

@@ -149,7 +149,9 @@ li a:hover:not(.active){
     padding:10px;
     margin: 20px;
 }
-
+.right .box2{
+    width: 60%;
+}
 .box2{
     border-style: solid;
     border-radius: 7px;
@@ -161,6 +163,9 @@ li a:hover:not(.active){
     flex-direction: column;
     margin: 20px;
     float: left;
+}
+.box2 .h2{
+    width: 100%;
 }
 .box3{
     float: left;
