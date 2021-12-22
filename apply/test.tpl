@@ -30,7 +30,7 @@
         </div>
     </div>   
     
-   <div class="row">
+<div class="row">
         <div class="side">
             <div class="box2" style="height: auto;">
                 <h2><%= apply_calculator_name %></h2>
@@ -52,7 +52,7 @@
                 <a href="../list_html/calculator.html" style="text-align: right;text-decoration: none;color: #000;">more</a> 
             </div>
         </div>
-     </div>
+    
 
 
      <div class="right">
@@ -62,19 +62,18 @@
 
              <% passage.forEach(function(passage){ %>
                 <div class="game">
-                <a href=<%= passage.html %> style="text-decoration: none;color: #000;"><%= passage.name %></a>
-                <p class="introduce"><%= passage.intro %></p>
-                <hr width="500px">
+                    <a href=<%= passage.html %> style="text-decoration: none;color: #000;"><%= passage.name %></a>
+                    <p class="introduce"><%= passage.intro %></p>
+                    <hr width="500px">
 
-                <i class="fa fa-folder-open"></i>
-                <a href=<%= passage.classification_html %> style="text-decoration: none;color: rgb(253, 166, 4);"><%= passage.classification %></a>
-                <i class="fa fa-tags"></i>
-
-               
+                    <i class="fa fa-folder-open"></i>
+                    <a href=<%= passage.classification_html %> style="text-decoration: none;color: rgb(253, 166, 4);"><%= passage.classification %></a>
+                    <i class="fa fa-tags"></i>
+                    <% for(let t in passage.tags){ %>
+                        <a href=""><%= t %></a>
+                    <% } %>
                 </div>
             <% }) %>
-            
-           
             <a href="../list_html/blog.html" style="text-align: right;text-decoration: none;color: #000;">more</a>
             <h3 style="text-align:center ;">评论区</h3>
         </div>
@@ -89,4 +88,5 @@
             <a href="https://github.com/luzy12345/web.github.io"><i class="fa fa-github" ></i></a>
         </div>
     </div>
+
 </div>
