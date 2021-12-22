@@ -56,22 +56,22 @@
 
 
      <div class="right">
-        <h2 style="width: 100%;"><%= apply_blog_name %></h2>
-        <div class="box2" style="height: auto;width: 60%;">
-            <h3 style="width: 100%;text-align:center ;">博文</h3>
+        <h2 ><%= apply_blog_name %></h2>
+        <div class="box2" style="height: auto;">
+            <h3 style="text-align:center ;">博文</h3>
             
             
            
             <a href="../list_html/blog.html" style="text-align: right;text-decoration: none;color: #000;">more</a>
-            <h3 style="width: 100%;text-align:center ;">评论区</h3>
+            <h3 style="text-align:center ;">评论区</h3>
         </div>
         <div class="aboutme"  style="height: auto;text-align: center;">
             <img src="../image/headimage.png">
-            <a href="../blog/aboutluzy.html" style="width: 100%;text-decoration: none;color: black;">Luzy</a><br>
-            <a href="../blog/readme.html" style="width: 100%;text-decoration: none;color: black;">关于这个网站</a><br>
-            <a href="../list_html/blog.html" style="width: 100%;text-decoration: none;color: black;"><i class="fa fa-sticky-note"></i>归档</a>
-            <a href="../classification/classification.html" style="width: 100%;text-decoration: none;color: rgb(253, 166, 4);"><i class="fa fa-folder-open"></i>分类</a>
-            <a href="../tags/tags.html" style="width: 100%;text-decoration: none;color: rgb(9, 236, 252);"><i class="fa fa-tags"></i>标签</a>
+            <a href="../blog/aboutluzy.html" style="text-decoration: none;color: black;">Luzy</a><br>
+            <a href="../blog/readme.html" style="text-decoration: none;color: black;">关于这个网站</a><br>
+            <a href="../list_html/blog.html" style="text-decoration: none;color: black;"><i class="fa fa-sticky-note"></i>归档</a>
+            <a href="../classification/classification.html" style="text-decoration: none;color: rgb(253, 166, 4);"><i class="fa fa-folder-open"></i>分类</a>
+            <a href="../tags/tags.html" style="text-decoration: none;color: rgb(9, 236, 252);"><i class="fa fa-tags"></i>标签</a>
             <hr width="200px">
             <a href="https://github.com/luzy12345/web.github.io"><i class="fa fa-github" ></i></a>
         </div>
