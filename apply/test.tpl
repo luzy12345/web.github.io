@@ -72,8 +72,8 @@
                     
                        
                     
-                    <% for(let t of passage.tags){ %>
-                        <a href=""><%= t %></a>
+                    <% for(let t in passage.tags){ %>
+                        <a href=<%= passage.tags_html[t] %>><%= passage.tags[t] %></a>
                     <% } %>
                 </div>
             <% }) %>
