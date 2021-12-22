@@ -59,21 +59,7 @@
         <h2 style="width: 100%;"><%= apply_blog_name %></h2>
         <div class="box2" style="height: auto;width: 60%;">
             <h3 style="width: 100%;text-align:center ;">博文</h3>
-            <% passage.forEach(function(passage){ %>
-                <div class="game">
-                <a href=<%= passage.html %> style="text-decoration: none;color: #000;width: 100%;"><%= passage.name %></a>
-                <p class="introduce"><%= passage.intro %></p>
-                <hr width="500px">
-
-                <i class="fa fa-folder-open"></i>
-                <a href=<%= passage.classification_html %> style="text-decoration: none;color: rgb(253, 166, 4);font-size: 90%;"><%= passage.classification %></a>
-                <i class="fa fa-tags"></i>
-
-                <% passage.tags_html.forEach(function(passage.tags_html){ %>
-                    <a href=<%= passage.tags_html %> style="text-decoration: none;color: rgb(9, 236, 252);font-size: 90%;">标签</a>
-                <% }) %>
-                </div>
-            <% }) %>
+            
             
            
             <a href="../list_html/blog.html" style="text-align: right;text-decoration: none;color: #000;">more</a>
