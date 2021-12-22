@@ -7,8 +7,10 @@
     <script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
     <script src="../js/ejs.js"></script>
     <script>
-        var post = {title:'我的博文',content:'博文内容', 
-        links:['<a href="./posts/32"> 相关文章一<a>','...']};
+        $.get("test.json",function(result){
+            var post=result;
+        });
+        
         $.get("test.tpl", function(result){
         var html = ejs.compile(result)(post);
         $("body").html(html);

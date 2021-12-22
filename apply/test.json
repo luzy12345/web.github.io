@@ -1,5 +1,5 @@
 {
-    "tom":["black",true,1577808000],
-    "cat":["yellow",false,7122634433357]
+    "title": "我的博文",
+    "content": "博文内容",
+    "links": ["<a href='./posts/32'> 相关文章一<a>","..."]
 }
-
