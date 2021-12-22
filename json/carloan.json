@@ -1,7 +1,7 @@
 
 {
     
-    "tupian": ["../image/houseloan.png","../image/houseloan2.png","../image/houseloan1.png"],
+    "tupian": ["../image/carloan.png","../image/carloan1.png","../image/carloan2.png"],
     "apply_calculator_name": "车贷计算器",
     "apply_calculator_html": "xxx",
     "apply_calculator": "../form_html/carloan.html",

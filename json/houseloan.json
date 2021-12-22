@@ -1,0 +1,29 @@
+
+{
+    
+    "tupian": ["../image/houseloan.png","../image/houseloan1.png","../image/houseloan2.png"],
+    "apply_calculator_name": "房贷计算器",
+    "apply_calculator_html": "xxx",
+    "apply_calculator": "../form_html/houseloan.html",
+    "apply_blog_name": "房贷相关blog",
+    "passage":[
+        {
+            "name": "HOUSELOAN_README",
+            "html":"../blog/houseloan_readme.html",
+            "intro": "房贷相关blog区域主要用于展示与车贷相关的信息，包括使用方法、科普等内容",
+            "classification": "介绍区",
+            "classification_html": "../classification/classification_introduce.html",
+            "tags": ["房贷","日记","简介"],
+            "tags_html": ["../tags/houseloan.html","../tages/diary.html","../tags/intro.html"]
+        },
+        {
+            "name": "房贷相关法律",
+            "html":"../blog/houseloan_law.html",
+            "intro": "法律相关内容",
+            "classification": "房贷区",
+            "classification_html": "../classification/houseloan.html",
+            "tags": ["房贷","法律"],
+            "tags_html": ["../tags/houseloan.html","../tages/law.html"]
+        }
+    ]
+}
