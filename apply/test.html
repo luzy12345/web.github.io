@@ -5,6 +5,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
     <script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/stackedCards.css"/>
+    <link  rel="stylesheet" type="text/css" href="../css/index.css">
+    <script src="../js/stackedCards.min.js"></script>
     <script src="../js/ejs.js"></script>
     <script>
         var res;
@@ -16,10 +19,10 @@
         
         $.get("test.tpl", function(result){
         var html = ejs.compile(result)(res);
-        $("body").html(html);
+        $("head").html(html);
         });
    </script>
 </head>
-<body>
-</body>
+<head>
+</head>
 </html>
