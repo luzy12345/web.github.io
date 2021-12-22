@@ -5,13 +5,16 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
     <script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
-</head>
-<body>
-    <p id="test"> </p>
-   <script>
-        $.get("test.tpl",function(data,status){
-            alert("Data: " + data + "\nStatus: " + status);
+    <script src="../js/ejs.js"></script>
+    <script>
+        var post = {title:'我的博文',content:'博文内容', 
+        links:['<a href="./posts/32"> 相关文章一<a>','...']};
+        $.get("test.tpl", function(result){
+        var html = ejs.compile(result)(post);
+        $("body").html(html);
         });
    </script>
+</head>
+<body>
 </body>
 </html>
