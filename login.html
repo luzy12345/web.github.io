@@ -11,28 +11,69 @@
     <script type="text/javascript" src='js/cookie.js'></script>
     <script type="text/javascript" src='js/jquery.cookie.js'></script>
 </head>
-<body>
-    <form>
-        用户名：<input  type="text" id="txtName"/><br/><br/>
-        密码：<input  type="password" id="txtPwd"/>
-        <br /><br />
-        <input type="checkbox"  name="remember" id="remember" /><label for="remember" >记住密码</label>
-        <input  type="button" id="submit" value="submit" onclick="login()"/>
-    </form>
+<body onload="login()">
+    <div class="navbar">
+        <div class="headerbox">
+            <h1 class="header">复利计算器</h1>
+        </div>
+        <div class="abox">
+            <li><a href="details_html/follow_details.html">关注我</a></li>
+            <li><a class="active" href="list_html/blog.html">blog</a></li>
+            <li><a  href="details_html/apply_details.html">应用</a></li>
+            <li><a href="details_html/calculator_details.html">计算器</a></li>
+            <li><a href="index.html">首页</a></li>
+        </div>
+    </div>
+
+    <div class="cover">
+        <div class="pic">
+
+        </div>
+        <div class="intro" style="padding: 200px;">
+            <h2>管理员登录</h2>
+        <form>
+            用户名：<input  type="text" id="txtName"/><br/><br/>
+            密码：<input  type="password" id="txtPwd"/>
+            <br /><br />
+            <input type="checkbox"  name="remember" id="remember" /><label for="remember" >记住密码</label>
+            <input  type="button" id="submit" value="登录" onclick="check()"/>
+        </form>
+    </div>
+    </div>
+    
     <script  type="text/javascript">
     function login(){
-        var username ="luzy";
-        var password ="123456";
-        var name=document.getElementById("txtName").value;
-        var pwd=document.getElementById("txtPwd").value;
-        if (name==username&&pwd==password) {
+        var username = localStorage.getItem('keyName');
+        var password = localStorage.getItem('keyPass');
+        if(username){
+        $('#txtName').val(username);
+        }if(password){
+        $('#txtPwd').val(password);
+        }
+    }
+    function check(){
+        var name="luzy";
+        var pwd="123456";
+        var userName = $('#txtName').val();
+        var passWord = $('#txtPwd').val();
+        localStorage.setItem('keyName',userName);
+        if($('#remember').is(':checked')){
+        localStorage.setItem('keyPass',password);
+        }else{
+            localStorage.removeItem('keyPass');
+        }
+        
+        if (name==userName&&pwd==passWord) {
                   alert("登录成功");
                   window.location.replace("form_html/add.html");
               }
               else {
                 alert("登录失败");
             }
+        
     }
+
+        
         
     </script>
 </body>

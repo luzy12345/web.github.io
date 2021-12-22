@@ -73,7 +73,7 @@
                        
                     
                     <% for(let t in passage.tags){ %>
-                        <a href=<%= passage.tags_html[t] %>><%= passage.tags[t] %></a>
+                        <a href=<%= passage.tags_html[t] %> style="text-decoration: none;color: rgb(9, 236, 252);"><%= passage.tags[t] %></a>
                     <% } %>
                 </div>
             <% }) %>

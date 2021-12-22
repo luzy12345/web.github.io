@@ -1,29 +1,23 @@
 function add(){
     //创建表格
 //创建对象
-//window下面的属性方法可以把window去掉或者写上
-var table = window.document.createElement("table");
+var table = document.createElement("table");
 for(var i=0;i<4;i++){
+var th = document.createElement("th");
 var tr = document.createElement("tr");
 var td = document.createElement("td");
 
-var txt = document.createTextNode("hello");
-var txt2 = document.createTextNode("hello");
+var txt1 = document.createTextNode("标题");
+var txt2 = document.createTextNode("作者");
+var txt3 = document.createTextNode("正文");
+var txt3 = document.createTextNode("时间");
+var txt3 = document.createTextNode("分类");
 //把表格添加到body里去
 td.appendChild(txt);
 td.appendChild(txt2);
 tr.appendChild(td);
 
-//给表格设置各行变色
-if(i%2 == 0){
 
-//偶数为红色
-tr.style.backgroundColor = "red";
-}else{
-
-//奇数为绿色
-tr.style.backgroundColor = "green";
-}
 table.appendChild(tr);
 }
 table.setAttribute("border",1);
