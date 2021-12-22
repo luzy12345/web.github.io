@@ -3,5 +3,27 @@
     
     "tupian": ["../image/houseloan.png","../image/houseloan2.png","../image/houseloan1.png"],
     "apply_calculator_name": "车贷计算器",
-    "apply_calculator_html": "xxx"
+    "apply_calculator_html": "xxx",
+    "apply_calculator": "../form_html/carloan.html",
+    "apply_blog_name": "车贷相关blog",
+    "passage":[
+        {
+            "name": "CARLOAN_README",
+            "html":"../blog/carloan_readme.html",
+            "intro": "车贷相关blog区域主要用于展示与车贷相关的信息，包括使用方法、科普等内容",
+            "classification": "介绍区",
+            "classification_html": "../classification/classification_introduce.html",
+            "tags": ["车贷","日记","简介"],
+            "tags_html": ["../tags/carloan.html","../tages/diary.html","../tags/intro.html"]
+        },
+        {
+            "name": "车贷相关法律",
+            "html":"../blog/carloan_law.html",
+            "intro": "法律相关内容",
+            "classification": "车贷区",
+            "classification_html": "../classification/carloan.html",
+            "tags": ["车贷","法律"],
+            "tags_html": ["../tags/carloan.html","../tages/law.html"]
+        }
+    ]
 }
