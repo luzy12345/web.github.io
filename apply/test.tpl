@@ -70,9 +70,7 @@
                 <a href=<%= passage.classification_html %> style="text-decoration: none;color: rgb(253, 166, 4);"><%= passage.classification %></a>
                 <i class="fa fa-tags"></i>
 
-                <% passage.tags_html.forEach(function(passage.tags_html){ %>
-                    <a href=<%= passage.tags_html %> style="text-decoration: none;color: rgb(9, 236, 252);">标签</a>
-                <% }) %>
+               
                 </div>
             <% }) %>
             
