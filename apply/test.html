@@ -7,12 +7,21 @@
     <script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
     <script src="../js/ejs.js"></script>
     <script>
-        $.get("test.json",function(data,status){
-            var post = JSON.parse(data);     
+         var mydata = [];
+        $.ajax({
+        url: 'test.json',
+        data: {id : 1},
+        async: false,
+        dataType: 'json',
+        success: function (result) {
+            mydata = result.whatever;
+        }
         });
+        return mydata;
+        
         
         $.get("test.tpl", function(result){
-        var html = ejs.compile(result)(post);
+        var html = ejs.compile(result)(mydata);
         $("body").html(html);
         });
    </script>
