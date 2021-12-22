@@ -63,11 +63,11 @@
                     <hr width="500px">
 
                     <i class="fa fa-folder-open"></i>
-                    <a href=<%= passage.classification %> style="text-decoration: none;color: rgb(253, 166, 4);font-size: 90%;"><%= passage.classification_name %></a>
+                    <a href=<%= passage.classification_html %> style="text-decoration: none;color: rgb(253, 166, 4);font-size: 90%;"><%= passage.classification %></a>
                     <i class="fa fa-tags"></i>
 
-                    <% passage.tags.forEach(function(passage.tags){ %>
-                        <a href=<%= passage.tags_html %> style="text-decoration: none;color: rgb(9, 236, 252);font-size: 90%;"><%= passage.tags %></a>
+                    <% passage.tags_html.forEach(function(passage.tags_html){ %>
+                        <a href=<%= passage.tags_html %> style="text-decoration: none;color: rgb(9, 236, 252);font-size: 90%;">标签</a>
                     <% }) %>
                     </div>
                 <% }) %>
