@@ -19,10 +19,10 @@
         
         $.get("test.tpl", function(result){
         var html = ejs.compile(result)(res);
-        $("head").html(html);
+        $("body").html(html);
         });
    </script>
 </head>
-<head>
-</head>
+<body>
+</body>
 </html>
