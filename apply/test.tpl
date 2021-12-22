@@ -33,13 +33,13 @@
    <div class="row">
         <div class="side">
             <div class="box2" style="height: auto;">
-                <h2 style="width: 100%;"><%= apply_calculator_name %></h2>
+                <h2><%= apply_calculator_name %></h2>
                 <div class="game">
                     <a href=<%= apply_calculator %> style="text-decoration: none;color: #000;"><%= apply_calculator_name %></a>
                 </div>
             </div>
             <div class="box2" style="height: auto">
-                <h2 style="width: 100%;">计算器</h2>
+                <h2>计算器</h2>
                 <div class="game">
                     <a href="../details_html/PF-details.html" style="text-decoration: none;color: #000;">一次性收付计算器</a>
                 </div>
