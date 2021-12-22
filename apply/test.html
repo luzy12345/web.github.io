@@ -8,7 +8,7 @@
     <script src="../js/ejs.js"></script>
     <script>
         $.get("test.json",function(result){
-            var post=result;
+            var post=JSON.parse(result);
         });
         
         $.get("test.tpl", function(result){
