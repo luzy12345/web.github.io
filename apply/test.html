@@ -5,31 +5,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
     <script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/stackedCards.css"/>
-    <script type="text/javascript" src="../js/stackedCards.min.js"></script>
-    
 </head>
 <body>
-    <script >
-            var stackedCard = new stackedCards({
-                selector: '.stacked-cards',
-                layout: "slide",
-                transformOrigin: "center",
-            });
- 
-            stackedCard.init();
-    </Script>
-    
-        <div class="stacked-cards">
-            <ul>
-                <li><img src="../image/calculato.png"></li>
-                <li><img src="../image/calculator1.1.png"></li>
-                <li><img src="../image/calculator1.1_gongshi.png"></li>
-                <li><img src="../image/calculator1.1_gongshi.png"></li>
-                <li>your content</li>
-            </ul>
-        </div>
-        
-   
+    <p id="test"> </p>
+   <script>
+        $.get("test.json",function(data,status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });
+   </script>
 </body>
 </html>
