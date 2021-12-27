@@ -43,7 +43,7 @@
                         <th>取值约束</th>
                     </tr>
 
-                    <%= parameter1_in.forEach(function(parameter1_in){ %>
+                    <% parameter1_in.forEach(function(parameter1_in){ %>
                         <tr>
                             <td><%= parameter1_in.chinese %></td>
                             <td><%= parameter1_in.english %></td>
@@ -62,7 +62,7 @@
                         <th>数据类型</th>
                         <th>取值约束</th>
                     </tr>
-                    <%= parameter1_out.forEach(function(parameter1_out){ %>
+                    <% parameter1_out.forEach(function(parameter1_out){ %>
                         <tr>
                             <td><%= parameter1_out.chinese %></td>
                             <td><%= parameter1_out.english %></td>
@@ -89,7 +89,7 @@
                         <th>数据类型</th>
                         <th>取值约束</th>
                     </tr>
-                    <%= parameter2_in.forEach(function(parameter2_in){ %>
+                    <% parameter2_in.forEach(function(parameter2_in){ %>
                         <tr>
                             <td><%= parameter2_in.chinese %></td>
                             <td><%= parameter2_in.english %></td>
@@ -108,7 +108,7 @@
                         <th>数据类型</th>
                         <th>取值约束</th>
                     </tr>
-                    <%= parameter2_out.forEach(function(parameter2_out){ %>
+                    <% parameter2_out.forEach(function(parameter2_out){ %>
                         <tr>
                             <td><%= parameter2_out.chinese %></td>
                             <td><%= parameter2_out.english %></td>
