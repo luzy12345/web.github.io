@@ -1,0 +1,71 @@
+{
+    "calculator_name": "一次性支付计算器",
+    "function1": "已知现值求终值",
+    "function2": "已知终值求现值",
+    "function1_name": "一次性支付终值计算（复利终值计算）",
+    "function2_name": "一次性支付现值计算（复利现值计算）",
+    "function1_intro": "复利终值是指本金在约定的期限内获得利息后，将利息加入本金再计利息，逐期滚算到约定期末的本金之和。",
+    "function2_intro": "复利现值是指在计算复利的情况下，要达到未来某一特定的资金金额，现今必须投入的本金。",
+    "gongshi1": "../image/calculator1.1_gongshi.png",
+    "gongshi2": "../image/calculator1.2_gongshi.png",
+    "parameter1_in":
+    [
+        {
+            "chinese": "利率",
+            "english": "rate",
+            "type": "double",
+            "constraint": "0~double最大取值"
+        },
+        {
+            "chinese": "计息期数",
+            "english": "n",
+            "type": "double",
+            "constraint": "0~double最大取值"
+        },
+        {
+            "chinese": "现值",
+            "english": "previous value",
+            "type": "double",
+            "constraint": "0~double最大取值"
+        }
+    ],
+    "parameter1_out":
+    [
+        {
+            "chinese": "终值",
+            "english": "future value",
+            "type": "double",
+            "constraint": "0~double最大取值"
+        }
+    ],
+    "parameter2_in":
+    [
+        {
+            "chinese": "利率",
+            "english": "rate",
+            "type": "double",
+            "constraint": "0~double最大取值"
+        },
+        {
+            "chinese": "计息期数",
+            "english": "n",
+            "type": "double",
+            "constraint": "0~double最大取值"
+        },
+        {
+            "chinese": "终值",
+            "english": "future value",
+            "type": "double",
+            "constraint": "0~double最大取值"
+        }
+    ],
+    "parameter2_out":
+    [
+        {
+            "chinese": "现值",
+            "english": "previous value",
+            "type": "double",
+            "constraint": "0~double最大取值"
+        }
+    ]
+}

@@ -129,3 +129,10 @@
     color: black;
     width: 25%;
   }
+
+  .side .img{
+      width: 100%
+  }
+  .box2 .img{
+    width: 80%
+}
