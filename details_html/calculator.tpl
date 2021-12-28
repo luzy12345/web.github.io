@@ -50,7 +50,7 @@
                             <td><%= parameter1_in.type %></td>
                             <td><%= parameter1_in.constraint %></td>
                         </tr>
-                    <% )} %>
+                    <% }) %>
                 </table>
             </div>
             <div class="box2">
@@ -69,7 +69,7 @@
                             <td><%= parameter1_out.type %></td>
                             <td><%= parameter1_out.constraint %></td>
                         </tr>
-                    <% )} %>
+                    <% }) %>
                 </table>
             </div>
         </div>
@@ -96,7 +96,7 @@
                             <td><%= parameter2_in.type %></td>
                             <td><%= parameter2_in.constraint %></td>
                         </tr>
-                    <% )} %>
+                    <% }) %>
                 </table>
             </div>
             <div class="box2">
@@ -115,7 +115,7 @@
                             <td><%= parameter2_out.type %></td>
                             <td><%= parameter2_out.constraint %></td>
                         </tr>
-                    <% )} %>
+                    <% }) %>
                 </table>
             </div>
         </div>
