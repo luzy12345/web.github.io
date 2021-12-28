@@ -2,13 +2,14 @@
     "calculator_name": "等额回收现值计算器",
     "function1": "已知年金求现值",
     "function2": "已知现值求年金",
+    "gongshi_html": "../form_html/PA.html",
     "function1_name": "等额多次支付现值计算（普通年金现值计算）",
     "function2_name": "资金回收计算（已知现值求年金）",
     "function1_intro": "普通年金现值：是指在一定时期内按相同时间间隔在每期期末收付的相等金额折算到第一期初的现值之和。",
     "function2_intro": "资金回收额：在利率与期限既定的前提下，每年要收回多少资金才能定额回收原来的投资。",
     "gongshi1": "../image/calculator2.1_gongshi.png",
     "gongshi2": "../image/calculator2.2_gongshi.png",
-    "gongshi_html": "../form_html/PA.html",
+
     "parameter1_in":
     [
         {
