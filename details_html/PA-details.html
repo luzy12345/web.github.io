@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>等额回收现值付计算器</title>
+    <title>一次性收付计算器</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link  rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link  rel="stylesheet" type="text/css" href="../css/calculator.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
+    <script src="../js/ejs.js"></script>
+    <script>
+        var res;
+        $.getJSON("../json/PA_details.json", function(result)
+        {
+            res = result;
+        });
+        
+        
+        $.get("calculator.tpl", function(result){
+        var html = ejs.compile(result)(res);
+        $("body").html(html);
+        });
+   </script>
 </head>
 <body>
-    <h1>等额回收现值计算器</h1>
-    <h2>简介</h2>
-    <h3>本计算器适用于分次存入等额本金和收回等额报酬的场景。用于计算现值和本金</h3>
-    <p>普通年金现值：是指在一定时期内按相同时间间隔在每期期末收付的相等金额折算到第一期初的现值之和。</p>
-    <p>资金回收额：在利率与期限既定的前提下，每年要收回多少资金才能定额回收原来的投资。</p>
-    <a href="../form_html/PA.html">点击使用计算器</a>
+    
+
+    
 </body>
 </html>
