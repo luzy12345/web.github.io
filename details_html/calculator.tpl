@@ -31,7 +31,7 @@
             <p><%= function1_intro %></p>
             <div class="box2">
                 <h3 >公式</h3>
-                <img src=<%= gongshi %>>
+                <img src=<%= gongshi1 %>>
             </div>
             <div class="box2">
                 <h3 >输入参数</h3>
