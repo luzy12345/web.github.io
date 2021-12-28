@@ -24,7 +24,7 @@
                 <li><%= function2 %></li>
             </ol>
             
-            <a href="../form_html/PF.html" style="text-decoration: none;color: rgb(6, 175, 34);">点击使用计算器</a>
+            <a href=<%= gongshi_html %> style="text-decoration: none;color: rgb(6, 175, 34);">点击使用计算器</a>
         </div>
         <div class="side">
             <h2><%= function1_name %></h2>

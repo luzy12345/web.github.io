@@ -8,6 +8,7 @@
     "function2_intro": "年偿债基金：是指为了在约定的未来某一时点清偿某笔债务或积聚一定数额的资金（实际上等于年金终值F）而必须分次等额提取的存款准备金。",
     "gongshi1": "../image/calculator3.2_gongshi.png",
     "gongshi2": "../image/calculator3.1_gongshi.png",
+    "gongshi_html": "../form_html/FA.html",
     "parameter1_in":
     [
         {
