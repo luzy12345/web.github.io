@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>等额支付终值付计算器</title>
+    <title>一次性收付计算器</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link  rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link  rel="stylesheet" type="text/css" href="../css/calculator.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
+    <script src="../js/ejs.js"></script>
+    <script>
+        var res;
+        $.getJSON("../json/FA_details.json", function(result)
+        {
+            res = result;
+        });
+        
+        
+        $.get("calculator.tpl", function(result){
+        var html = ejs.compile(result)(res);
+        $("body").html(html);
+        });
+   </script>
 </head>
 <body>
-    <h1>等额支付终值计算器</h1>
-    <h2>简介</h2>
-    <h3>本计算器适用于分次存入等额本金和收回等额报酬的场景。用于计算终值和年金</h3>
-    <p>普通年金终值：指一定时期内，每期期末等额收入或支出的本利和。也就是将每一期的金额，按复利换算到最后一期期末的终值，然后加总。</p>
-    <p>年偿债基金：是指为了在约定的未来某一时点清偿某笔债务或积聚一定数额的资金（实际上等于年金终值F）而必须分次等额提取的存款准备金。</p>
-    <a href="../form_html/FA.html">点击使用计算器</a>
+    
+
+    
 </body>
 </html>
