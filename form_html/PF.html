@@ -7,8 +7,9 @@
 	<link  rel="stylesheet" type="text/css" href="../css/normalize.css">
     <link  rel="stylesheet" type="text/css" href="../css/index.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+	<script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
 </head>
-<body>
+<body onload="loadrate()">
 	<div class="navbar">
         <div class="headerbox">
             <h1 class="header">复利计算器</h1>
@@ -26,22 +27,90 @@
 			<div class="box3">
 				<h3>一次性收付计算器</h3>
 				<form>
-					pv:</br>
-					<input type="text" name="pv" id="pv"></br>
-					fv:</br>
-					<input type="text" name="fv" id="fv"></br>
-					rate:</br>
-					<input type="text" name="rate" id="rate"></br>
-					nper:</br>
-					<input type="text" name="nper" id="nper"></br>
+					<input type="radio" name="calculate" value="pv" checked>终值
+					<br>
+					<input type="radio" name="calculate" value="fv" onchange="change()">现值
+					<br>
+					</form>
+					<input type="text" name="pv" id="pv" value="pv" onfocus="fopv()" onfocusout="leavepv()"></br></br>
+					<input type="text" name="fv" id="fv"  value="fv" onfocus="fofv()" onfocusout="leavefv()"></br></br>
+					<input type="text" name="rate" id="rate"  value="rate" onfocus="forate()" onfocusout="leaverate()"></br>
+					<select name="rateselect" size="3" id="rateselect">
+						<option value="0.03">0.03</option>
+						<option value="0.05">0.05</option>
+						<option value="0.1">0.1</option>
+						<option value="0.15">0.15</option>
+					</select></br>
+					
+					<input type="text" name="nper" id="nper"  value="nper" onfocus="fonper()" onfocusout="leavenper()"></br></br>
+					
 				</form>
-				<button onclick="pf()">终值：</button>
-				<button onclick="fp()">现值：</button>
+				<button onclick="pf()" id="fv">终值</button>
+				<button onclick="fp()" id="pv">现值</button>
 				<p id="pf"></p>
 				<p id="fp"></p>
 			</div>
 		</div>
+		<script>
+			$("input:radio").click(function(){        
+				$("#pv").hide();
+				$("#fv").hide();
+				var div = "#"+$(this).val();
+				$(div).show();
+			});
+			$("#rateselect").on("click", "option", function(){
+					$("#rate").val($(this).val());
+			});
+		</script>
+		<script>
+			function fopv(){
+				var x=document.getElementById("pv");
+				x.value = ''
+			}
+			function fofv(){
+				var x=document.getElementById("fv");
+				x.value = ''
+			}
+			function loadrate(){
+				$("#rateselect").hide();
+			}
+			function forate(){
+				var x=document.getElementById("rate");
+				x.value = ''
+				$("#rateselect").show();
+			}
+			function fonper(){
+				var x=document.getElementById("nper");
+				x.value = ''
+			}
+			function leavepv(){
+				var x=document.getElementById("pv");
+				if(x.value == ''){
+					x.value = '请输入pv'
+				}
+			}
+			function leavefv(){
+				var x=document.getElementById("fv");
+				if(x.value == ''){
+					x.value = '请输入fv'
+				}
+			}
+			function leaverate(){
+				var x=document.getElementById("rate");
+				if(x.value == ''){
+					x.value = '请输入rate'
+				}
+			}
+			function leavenper(){
+				var x=document.getElementById("nper");
+				if(x.value == ''){
+					x.value = '请输入nper'
+				}
+			}
+		</script>
 		
+
+
 		<div class="right">
 
 		</div>
