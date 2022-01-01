@@ -176,12 +176,12 @@ li a:hover:not(.active){
     width: 90%;
 }
 .aboutme{
-    float: right;
+    float: left;
     border-style: solid;
     background-color: white;
     
     margin: 20px;
-    width: 30%;
+    width: 90%;
 }
 .game{
     border-style: solid;

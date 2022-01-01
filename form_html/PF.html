@@ -88,17 +88,31 @@
 				if(x.value == ''){
 					x.value = '请输入pv'
 				}
+				else if(!isNumeric(x.value)) {
+					txt = "";
+					x.value="你输入的不是数字";
+				}
+			
 			}
 			function leavefv(){
 				var x=document.getElementById("fv");
 				if(x.value == ''){
 					x.value = '请输入fv'
 				}
+				else if(!isNumeric(x.value)) {
+					txt = "";
+					x.value="你输入的不是数字";
+				}
+				
 			}
 			function leaverate(){
 				var x=document.getElementById("rate");
 				if(x.value == ''){
 					x.value = '请输入rate'
+				}
+				else if(!isNumeric(x.value)) {
+					txt = "";
+					x.value="你输入的不是数字";
 				}
 			}
 			function leavenper(){
@@ -106,6 +120,18 @@
 				if(x.value == ''){
 					x.value = '请输入nper'
 				}
+				else if(!isNumeric(x.value)) {
+					txt = "";
+					x.value="你输入的不是数字";
+				}
+				else if(!isNaN(x.value)){
+					x.value="你输入的不是整数"
+				}
+			}
+
+
+			function isNumeric(n) {
+				return !isNaN(parseFloat(n)) && isFinite(n);
 			}
 		</script>
 		
