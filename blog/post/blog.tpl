@@ -1,4 +1,4 @@
-<h2 style="width: 100%;">博文归档</h2>
+<h2>博文归档</h2>
         
             <table id="table">
                 <tr>
