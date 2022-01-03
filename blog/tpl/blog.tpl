@@ -19,17 +19,17 @@
                     <td>2021.11.23</td>
                     <td><a href="../classification/classification_introduce.html" style="text-decoration: none;color: #000;">介绍区</a></td>
                 </tr>
-                <tr>
-                    <td >...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
-                <tr>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
+                
+                <% data.forEach(function(post){ %>        
+                    <tr>
+                    <td><%= post.id %></td>
+                    <td><a href="#/posts/<%= post.id %>"><%= post.title %></a></td>
+                    <td><%= post.created_at %></td> 
+                    <td>
+                        <a href="#/posts/<%= post.id %>/edit">改</a>
+                        <a href="#/posts/<%= post.id %>/delete">删</a>
+                    </td> 
+                    </tr> 
+                <% }) %>
             </table>
             <button onclick="window.location.href ='../login.html'">新增文档</button>
