@@ -1,5 +1,5 @@
   <h2>新增</h2>
-  <form action="#/" method="post" onsubmit="return post_create()">    
+  <form action="#" method="post" onsubmit="return post_create()">    
     <label for="title">title</label>
     <input type="text" name="title" value="第2篇帖子" />
     <br/>
