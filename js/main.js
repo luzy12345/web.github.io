@@ -36,6 +36,7 @@ function get_last_key(){
 function post_create(){   
   let post = {}   
   post["title"] = $('input[name=title]').val()
+  post["author"] = $('input[name=author]').val()
   post["body"] = $('textarea[name=body]').val()
   today = new Date()
   post["created_at"] = `${today.getFullYear()}-${today.getMonth()}-${today.getDate()}`
@@ -48,6 +49,7 @@ function post_update(){
   let id = $('input[name=id]').val()
   let post = getPost(id)      
   post["title"] = $('input[name=title]').val()
+  post["author"] = $('input[name=author]').val()
   post["body"] = $('textarea[name=body]').val()
   
   localStorage.setItem(post["id"], JSON.stringify(post))      
