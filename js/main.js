@@ -63,7 +63,7 @@ function renderTemplate(domId,tplName,resourceType,resourceId){
   data = resourceId ? getPost(resourceId) : getPosts()
   console.log(data)
   // 字符串插值
-  path = `/${tplName}.tpl`
+  path = `${tplName}.tpl`
 
   $.get(path, function(tpl){         
     // 这里使用了链接调用,可以节省一个本地变量
