@@ -32,4 +32,4 @@
                     </tr> 
                 <% }) %>
             </table>
-            <button onclick="window.location.href ='../login.html'">新增文档</button>
+            <button onclick="window.location.href ='#/posts/new'">新增文档</button>
