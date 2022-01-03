@@ -9,6 +9,7 @@
 //解决方案可以考虑使用indexDB或WebSql等存储方式。以及使用https://github.com/localForage/localForage/ 这类的通用库。
 function getPosts(){
   let posts = []
+  alter(localStorage.length)
   for ( var i = 0, len = localStorage.length; i < len; ++i ) {
     let post  = localStorage.getItem( localStorage.key( i ) )         
     posts[i] = JSON.parse(post)
