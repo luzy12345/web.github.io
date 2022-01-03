@@ -6,6 +6,9 @@
     <link  rel="stylesheet" type="text/css" href="../css/normalize.css">
     <link  rel="stylesheet" type="text/css" href="../css/classification.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="../js/localforage.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/director.js"></script>
     <script src="../js/crud.js"></script>
 </head>
 <body>
@@ -22,42 +25,11 @@
         </div>
     </div>
     <div class="row">
-        <div class="side">
+        <div class="side" id="main">
         <h2 style="width: 100%;">博文归档</h2>
-        
-            <table id="table">
-                <tr>
-                    <th>标题</th>
-                    <th>作者</th>
-                    <th>上传日期</th>
-                    <th>分类</th>
-                </tr>
-                <tr>
-                    <td><a href="../blog/readme.html" style="text-decoration: none;color: #000;">README</a></td>
-                    <td><a href="../blog/aboutluzy.html" style="text-decoration: none;color: #000;">Luzy</a></td>
-                    <td>2021.11.24</td>
-                    <td><a href="../classification/classification_introduce.html" style="text-decoration: none;color: #000;">介绍区</a></td>
-                </tr>
-                <tr>
-                    <td><a href="../blog/aboutluzy.html" style="text-decoration: none;color: #000;">ABOUTME</a></td>
-                    <td><a href="../blog/aboutluzy.html" style="text-decoration: none;color: #000;">Luzy</a></td>
-                    <td>2021.11.23</td>
-                    <td><a href="../classification/classification_introduce.html" style="text-decoration: none;color: #000;">介绍区</a></td>
-                </tr>
-                <tr>
-                    <td >...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
-                <tr>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                </tr>
-            </table>
-            <button onclick="window.location.href ='../login.html'">新增文档</button>
+        <a href="#/">归档</a>
+        <a href="#/posts/new">新增</a>
+           
 
         </div>
         <div class="right">
@@ -74,5 +46,51 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+
+        // 客户端路由库，方便处理对hash的监听和解析 https://github.com/flatiron/director    
+        // https://www.cnblogs.com/Showshare/p/director-chinese-tutorial.html
+        var routes = {      
+          '/': blog,
+          '/posts/new': posts_new,
+          '/posts/:id': posts_show,
+          '/posts/:id/edit': posts_edit,
+          '/posts/:id/delete': posts_delete
+        };
+    
+        var router = Router(routes).configure({strict:false});
+        router.init();
+    
+        //  `index.html#/posts/2`这样的客户端路由被分享或收藏时，也会触发载入首页，导致home()被执行 ，此处排除这种状况
+        if(location.hash == '' ){ blog() }      
+        
+        function blog(){
+          posts_blog()      
+        }
+    
+        function posts_blog(){
+          renderTemplate('#main','post/blog','posts')        
+        }
+    
+        function posts_new(){
+          renderTemplate('#main','post/new','posts')  
+        }
+    
+        function posts_show(id){      
+          renderTemplate('#main','post/show','posts',id) 
+        }
+    
+        function posts_edit(id){
+          renderTemplate('#main','post/edit','posts',id) 
+        }
+    
+        function posts_delete(id){      
+          //删除是危险操作，一般应提供一个删除表单，请用户确认是否删除。此处从简，留给同学们实现
+          //renderTemplate('#main','post/delete','posts',id)  
+          postDestroy(id)
+          posts_index()
+        }
+    
+      </script>
 </body>
 </html>

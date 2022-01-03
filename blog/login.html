@@ -3,25 +3,26 @@
 <head>
     <title>登录</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link  rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link  rel="stylesheet" type="text/css" href="css/index.css">
+    <link  rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link  rel="stylesheet" type="text/css" href="../css/index.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
-    <script type="text/javascript" src="site.json"></script>
-    <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
-    <script type="text/javascript" src='js/cookie.js'></script>
-    <script type="text/javascript" src='js/jquery.cookie.js'></script>
+    <script type="text/javascript" src="../site.json"></script>
+    <script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src='../js/cookie.js'></script>
+    <script type="text/javascript" src='../js/jquery.cookie.js'></script>
 </head>
 <body onload="login()">
+   
     <div class="navbar">
         <div class="headerbox">
             <h1 class="header">复利计算器</h1>
         </div>
         <div class="abox">
-            <li><a href="details_html/follow_details.html">关注我</a></li>
-            <li><a class="active" href="list_html/blog.html">blog</a></li>
-            <li><a  href="details_html/apply_details.html">应用</a></li>
-            <li><a href="details_html/calculator_details.html">计算器</a></li>
-            <li><a href="index.html">首页</a></li>
+            <li><a href="../details_html/follow_details.html">关注我</a></li>
+            <li><a class="active" href="../list_html/blog.html">blog</a></li>
+            <li><a  href="../details_html/apply_details.html">应用</a></li>
+            <li><a href="../details_html/calculator_details.html">计算器</a></li>
+            <li><a href="../index.html">首页</a></li>
         </div>
     </div>
 
@@ -40,7 +41,8 @@
         </form>
     </div>
     </div>
-    
+  
+  
     <script  type="text/javascript">
     function login(){
         var username = localStorage.getItem('keyName');
