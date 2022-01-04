@@ -39,7 +39,7 @@ function post_create(){
   post["author"] = $('input[name=author]').val()
   post["body"] = $('textarea[name=body]').val()
   today = new Date()
-  post["created_at"] = `${today.getFullYear()}-${today.getMonth()}-${today.getDate()}`
+  post["created_at"] = `${today.getFullYear()}-${today.getMonth()+1}-${today.getDate()}`
   post["id"] = get_last_key()
   localStorage.setItem(post["id"], JSON.stringify(post))      
   return true
